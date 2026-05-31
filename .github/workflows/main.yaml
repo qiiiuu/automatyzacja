@@ -12,7 +12,7 @@ jobs:
           uses: SamKirkland/FTP-Deploy-Action@v4.4.0
           with:
             server: ${{ secrets.ftp_hostname }}
-            username: student
-            password: Student1234#*
+            username: ${{ secrets.ftp_username }}
+            password: ${{ secrets.ftp_password }}
             protocol: ftp
             server-dir: /var/www/html/maciejzabek/
